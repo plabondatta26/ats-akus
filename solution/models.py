@@ -90,6 +90,7 @@ class TestimonialHeader(models.Model):
 class Testimonial(models.Model):
     name = models.CharField(max_length=100, blank=False, null=False)
     designation = models.CharField(max_length=200, blank=True, null=True)
+    image = models.FileField(upload_to='Testimonial/', blank=True, null=True)
     title = models.CharField(max_length=300, blank=True, null=True)
     description = models.CharField(max_length=1000, blank=False, null=False)
     visibility = models.BooleanField(default=False)
