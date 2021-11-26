@@ -30,7 +30,7 @@ class PriceModel(models.Model):
     ]
     package = models.ForeignKey(PackageTypeModel, on_delete=models.CASCADE)
     price = models.CharField(max_length=100, blank=False, null=False)
-    validity = models.CharField(choices=validity_type, blank=False, null=False)
+    validity = models.CharField(choices=validity_type,max_length=100, blank=False, null=False)
     contains = models.TextField(max_length=2000, blank=False, null=False)
 
     def __str__(self):

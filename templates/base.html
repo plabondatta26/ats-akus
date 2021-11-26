@@ -1,0 +1,190 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="6s5nbj7gcXELjeJ4QFqn8VCJp4z2bcPk14nlFvgu">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon.ico' %}">
+    <title>Akus</title>
+    <meta name="description" content="RNS IT Solution">
+    <meta name="author" content="mirageweb">
+    <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/bootstrap.css' %}">
+    <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/owl.css' %}">
+    <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/owl-2.css' %}">
+    <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/fonts.css' %}">
+    <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/style.css' %}">
+
+    <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/blog.css' %}">
+    <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/port1.css' %}">
+    <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/port2.css' %}">
+    <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/responsive.css' %}">
+    <link media="all" type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <style id="linoor-main-inline-css">
+         :root {
+            --thm-base: #ffaa17;
+            --thm-black: #222429;
+        }
+        
+        .page-banner .image-layer {
+            background-image: url(http://layerdrops.com/linoorwp/wp-content/uploads/2021/01/image-7.jpg);
+        }
+    </style>
+    <script src="{% static 'js/js.js' %}"></script>
+    <script src="{% static 'js/port3.js' %}" id="jquery-core-js"></script>
+
+</head>
+
+<body class="archive post-type-archive post-type-archive-portfolio wp-custom-logo hfeed elementor-default elementor-kit-9 page-loaded" data-elementor-device-mode="desktop">
+
+    <header class="header_sec scroll">
+        <div class="container-fluid">
+            <div class="overlay_menu"></div>
+            <nav class="navbar navbar-expand-sm">
+                <a class="navbar-brand" href="/">
+                    <img src="{% static 'images/akus_logo.png'%}" alt="LOGO">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">☰</button>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <a href="javascript:void(0);" class="navbar_cross">✕</a>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active"> <a class="nav-link" href="/">Home</a>
+                        </li>
+
+                        <li class="nav-item nav_sub">
+                            <a class="nav-link" href="{% url 'ServiceView' %}">Services</a>
+                            <span class="nav_pls"></span>
+                            <ul class="nav_submenu">
+                                <div class="container">
+                                    <div class="nav_submenu_in">
+                                        <div class="row">
+
+                                            <div class="col-md-4">
+                                                <ul>
+                                                    <li class="titleName">
+                                                        <a href="#">Mobile App Development</a></li>
+                                                    <li><a href="#">Android</a></li>
+                                                    <li><a href="#">iOS</a></li>
+                                                    <li><a href="#">Hybrid App Developement</a></li>
+                                                    <li><a href="#">Xamarin App Development</a></li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <ul>
+                                                    <li class="titleName"><a href="#">Web development</a></li>
+                                                    <li><a href="#">PHP</a></li>
+                                                    <li><a href="#">Asp Dot Net</a></li>
+                                                    <li><a href="#">Java</a></li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <ul>
+                                                    <li class="titleName"><a href="#">Digital Marketing</a></li>
+                                                    <li><a href="#">SEO</a></li>
+                                                    <li><a href="#">PPC</a></li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <ul>
+                                                    <li class="titleName"><a href="#">Ecommerce &amp; CMS Development</a></li>
+
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="{% url 'AboutView'%}">About Us</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="{% url 'BlogView'%}">Blog</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="{% url 'PortfolioView'%}">Portfolio</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="{% url 'ContactView'%}">Contact Us</a>
+                        </li>
+                        <li><a href="#" class="btn btn-primary">Request A Quote <span class="circle"></span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    {% block content %} {% endblock content %}
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <img src="#" alt="Logo" class="img-fluid pb-3">
+                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat
+                            mauris nunc congue.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="fas fa-chevron-right"></i> <a href="/">Home</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="{% url 'AboutView' %}">About us</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="{% url 'ServiceView' %}">Services</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            A108 Adam Street <br> New York, NY 535022<br> United States <br>
+                            <strong>Phone:</strong> +1 5589 55488 55<br>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
+
+                        <div class="social-links">
+                            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></i></a>
+                            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <!-- Scripts -->
+    <script src="{% static 'js/proper.js' %}"></script>
+
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+
+    <script src="{% static 'js/owl.js' %}"></script>
+
+    <script src="{% static 'js/match.js' %}"></script>
+    <script src="{% static 'js/port1.js' %}" id="mixitup-js"></script>
+    <script src="{% static 'js/port2.js' %}" id="linoor-theme-js"></script>
+
+    <script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+
+</html>

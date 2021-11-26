@@ -1,0 +1,186 @@
+{% extends 'base.html' %} {% load static %}{% block content %}
+<!-- Preloader -->
+<div class="preloader" style="display: none;">
+    <div class="icon"></div>
+</div>
+
+
+<div class="page-wrapper ">
+    <div id="page" class="site">
+        \
+        <!-- Banner Section -->
+        <section class="page-banner">
+            <div class="image-layer"></div>
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+            <div class="banner-inner">
+                <div class="auto-container">
+                    <div class="inner-container clearfix">
+                        <h1>
+                            Archives: <span>Portfolios</span> </h1>
+
+
+                        <div class="page-nav">
+                            <ul class="bread-crumb clearfix">
+                                <li class="thm-breadcrumb__item"><a href="#">Home</a></li>
+                                <li class="thm-breadcrumb__item active"><span>Portfolios</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Banner Section -->
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <div class="auto-container">
+                <!--MixitUp Galery-->
+                <div class="mixitup-gallery">
+                    <!--Filter-->
+                    <div class="filters centered clearfix">
+
+                        <!--Filter-->
+                        <ul class="filter-tabs m-0 list-unstyled filter-btns clearfix">
+                            <li class="filter active" data-role="button" data-filter="all">All<sup>[7]</sup></li>
+                            <li class="filter" data-role="button" data-filter=".branding">Branding<sup>[4]</sup>
+                            </li>
+                            <li class="filter" data-role="button" data-filter=".graphic">Graphic<sup>[4]</sup>
+                            </li>
+                            <li class="filter" data-role="button" data-filter=".illustration">illustration<sup>[5]</sup>
+                            </li>
+                            <li class="filter" data-role="button" data-filter=".photography">Photography<sup>[4]</sup>
+                            </li>
+                            <li class="filter" data-role="button" data-filter=".web-design">Web Design<sup>[3]</sup>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="filter-list row" id="portfolio-posts">
+                        <!-- Gallery Item -->
+                        <div class="gallery-item mix all  illustration photography col-lg-4 col-md-6 col-sm-12" style="display: inline-block;">
+                            <div class="inner-box">
+                                <figure class="image"><img width="370" height="426" src="{% static 'images/port1.jpg' %}" class="attachment-linoor_370X426 size-linoor_370X426 wp-post-image" alt="" loading="lazy"></figure>
+                                <a href="#" class="lightbox-image overlay-box" data-fancybox="gallery"></a>
+                                <div class="cap-box">
+                                    <div class="cap-inner">
+                                        <div class="cat"><span>illustration</span></div>
+                                        <div class="title">
+                                            <h5><a href="#">filmore experience</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gallery Item -->
+                        <div class="gallery-item mix all  graphic illustration web-design col-lg-4 col-md-6 col-sm-12" style="display: inline-block;">
+                            <div class="inner-box">
+                                <figure class="image"><img width="370" height="426" src="{% static 'images/port2.jpg' %}" class="attachment-linoor_370X426 size-linoor_370X426 wp-post-image" alt="" loading="lazy"></figure>
+                                <a href="#" class="lightbox-image overlay-box" data-fancybox="gallery"></a>
+                                <div class="cap-box">
+                                    <div class="cap-inner">
+                                        <div class="cat"><span>Graphic</span></div>
+                                        <div class="title">
+                                            <h5><a href="#">Desktop Mockup</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gallery Item -->
+                        <div class="gallery-item mix all  branding illustration web-design col-lg-4 col-md-6 col-sm-12" style="display: inline-block;">
+                            <div class="inner-box">
+                                <figure class="image"><img width="370" height="426" src="{% static 'images/port3.jpg' %}" class="attachment-linoor_370X426 size-linoor_370X426 wp-post-image" alt="" loading="lazy"></figure>
+                                <a href="#" class="lightbox-image overlay-box" data-fancybox="gallery"></a>
+                                <div class="cap-box">
+                                    <div class="cap-inner">
+                                        <div class="cat"><span>Branding</span></div>
+                                        <div class="title">
+                                            <h5><a href="#">Object Photography</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gallery Item -->
+                        <div class="gallery-item mix all  graphic illustration photography col-lg-4 col-md-6 col-sm-12" style="display: inline-block;">
+                            <div class="inner-box">
+                                <figure class="image"><img width="370" height="426" src="{% static 'images/port4.jpg' %}" class="attachment-linoor_370X426 size-linoor_370X426 wp-post-image" alt="" loading="lazy"></figure>
+                                <a href="#" class="lightbox-image overlay-box" data-fancybox="gallery"></a>
+                                <div class="cap-box">
+                                    <div class="cap-inner">
+                                        <div class="cat"><span>Graphic</span></div>
+                                        <div class="title">
+                                            <h5><a href="#">Globe Design</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gallery Item -->
+                        <div class="gallery-item mix all  branding photography web-design col-lg-4 col-md-6 col-sm-12" style="display: inline-block;">
+                            <div class="inner-box">
+                                <figure class="image"><img width="370" height="426" src="{% static 'images/port5.jpg' %}" class="attachment-linoor_370X426 size-linoor_370X426 wp-post-image" alt="" loading="lazy"></figure>
+                                <a href="#" class="lightbox-image overlay-box" data-fancybox="gallery"></a>
+                                <div class="cap-box">
+                                    <div class="cap-inner">
+                                        <div class="cat"><span>Branding</span></div>
+                                        <div class="title">
+                                            <h5><a href="#">Camera photography</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gallery Item -->
+                        <div class="gallery-item mix all  branding graphic illustration photography col-lg-4 col-md-6 col-sm-12" style="display: inline-block;">
+                            <div class="inner-box">
+                                <figure class="image"><img width="370" height="426" src="{% static 'images/port6.jpg' %}" class="attachment-linoor_370X426 size-linoor_370X426 wp-post-image" alt="" loading="lazy"></figure>
+                                <a href="#" class="lightbox-image overlay-box" data-fancybox="gallery"></a>
+                                <div class="cap-box">
+                                    <div class="cap-inner">
+                                        <div class="cat"><span>Branding</span></div>
+                                        <div class="title">
+                                            <h5><a href="#">Product Photography</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gallery Item -->
+                        <div class="gallery-item mix all  branding graphic col-lg-4 col-md-6 col-sm-12" style="display: inline-block;">
+                            <div class="inner-box">
+                                <figure class="image"><img width="370" height="426" src="{% static 'images/port7.jpg' %}" class="attachment-linoor_370X426 size-linoor_370X426 wp-post-image" alt="" loading="lazy"></figure>
+                                <a href="#" class="lightbox-image overlay-box" data-fancybox="gallery"></a>
+                                <div class="cap-box">
+                                    <div class="cap-inner">
+                                        <div class="cat"><span>Branding</span></div>
+                                        <div class="title">
+                                            <h5><a href="#">Fimlor Experience</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="blog-post-pagination">
+                            </div>
+                            <!-- /.blog-post-pagination -->
+                        </div>
+                        <!-- /.col-lg-12 -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+    </div>
+    <!-- #page -->
+
+</div>
+<!-- /.page-wrapper -->
+
+
+{% endblock content %}

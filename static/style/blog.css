@@ -1,0 +1,19 @@
+*{margin: 0;padding: 0;}
+.pad-0{padding-right: 0;padding-left: 0;}
+.mt-100{margin-top: 100px;}
+.blog-img{height: 500px;position: relative;background-position: center center;background-attachment: fixed;background-size: cover;background-repeat: no-repeat;}
+.grid-mid-post {float: left;width: 100%;margin-top: 15px;margin-bottom: 20px;background: #fff;overflow: hidden;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;box-shadow: 0 15px 55px -5px rgb(9 31 67 / 10%);}
+ .format-post {height: auto;}
+.format-post, .post-content {position: relative;-webkit-transition: all .4s ease-in-out;-moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.grid-mid-post .format-post figure {max-height: 260px;}
+img {height: auto;max-width: 100%;vertical-align: middle;}
+a.cat-name, p.cat-name {position: absolute;color: #fff;left: 25px;top: 25px;font-weight: 600;font-size: 12px!important;line-height: 10px!important;padding: 7px 10px;
+        z-index: 4;overflow: hidden;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;background: #f29111;-webkit-transition: all .4s ease-in-out;-moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.content-post{position: relative;padding: 30px 35px;float: left;width: 100%;clear: both;}
+ul.meta-post {padding: 0;margin: 0;}
+ul.meta-post li {position: relative;display: inline-block;margin-right: 15px;font-size: 13px;line-height: 1.6;color:#f29111;font-weight: 400;letter-spacing: 0;text-transform: capitalize;}
+.post-title{font-size: 22px!important;font-weight: 600!important;clear: both;line-height: 32px;margin-top: 3px;margin-bottom: 10px;}
+.button.btn-txt-arrow {margin-bottom: 0;padding-bottom: 0;padding-top: 0;padding-left: 0;}
+.button.btn-txt {font-size: 13px!important;font-weight: 500;letter-spacing: 1px;text-transform: uppercase;line-height: 1.4;min-height: auto;}
+.button.btn-txt-arrow .button-text {position: relative;z-index: 1;transition: .5s;padding-right: 10px!important;}
