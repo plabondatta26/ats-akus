@@ -9,16 +9,20 @@
     <title>Akus</title>
     <meta name="description" content="RNS IT Solution">
     <meta name="author" content="mirageweb">
+
     <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/bootstrap.css' %}">
     <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/owl.css' %}">
     <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/owl-2.css' %}">
     <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/fonts.css' %}">
-    <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/style.css' %}">
 
     <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/blog.css' %}">
     <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/port1.css' %}">
     <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/port2.css' %}">
+    <!-- <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/about.css' %}"> -->
+
+    <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/style.css' %}">
     <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/responsive.css' %}">
+    <!-- <link media="all" type="text/css" rel="stylesheet" href="{% static 'style/custom.css' %}"> -->
     <link media="all" type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 
@@ -110,11 +114,17 @@
                         <li class="nav-item"> <a class="nav-link" href="{% url 'ContactView'%}">Contact Us</a>
                         </li>
                         <li><a href="#" class="btn btn-primary">Request A Quote <span class="circle"></span></a></li>
+                        <!-- <li> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Launch demo modal
+                      </button></li> -->
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
+
+
+
     {% block content %} {% endblock content %}
 
     <footer id="footer">
@@ -184,7 +194,37 @@
 
     <script src="{% static 'js/main.js' %}"></script>
 
-
+    <script>
+        $(document).ready(function() {
+            function showPopup(whichpopup) {
+                var docHeight = $(document).height();
+                var scrollTop = $(window).scrollTop();
+                $('.overlay-bg').show().css({
+                    'height': docHeight
+                });
+                $('.popup' + whichpopup).show().css({
+                    'top': scrollTop + 20 + 'px'
+                });
+            }
+            // function to close our popups
+            function closePopup() {
+                $('.overlay-bg, .overlay-content').hide();
+            }
+            $('.show-popup').click(function(event) {
+                event.preventDefault();
+                var selectedPopup = $(this).data('showpopup');
+                showPopup(selectedPopup);
+            });
+            $('.close-btn, .overlay-bg').click(function() {
+                closePopup();
+            });
+            $(document).keyup(function(e) {
+                if (e.keyCode == 27) {
+                    closePopup();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
